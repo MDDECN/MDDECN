@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDDECN | Web Design & Digital Architecture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: #38bdf8;
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 2.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 30%, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 1.2rem 3rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: 0.4s;
+            box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #f8fafc;
+            transform: scale(1.05);
+        }
+
+        .services {
+            padding: 8rem 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            background-color: #0f172a;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            padding: 3rem;
+            border-radius: 2px;
+            border-left: 4px solid #334155;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            border-left-color: #38bdf8;
+            transform: translateX(10px);
+            background: #1e293b;
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: #f8fafc;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        footer {
+            padding: 4rem 10%;
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            color: #475569;
+            font-size: 0.8rem;
+            background-color: #0f172a;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">MARIAN COTHELEY</a>
+        <nav>
+            <a href="#services">Portfolio</a>
+            <a href="#services">Solutions</a>
+            <a href="https://wa.me/5511988419446">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bespoke Web Architecture</h1>
+        <p>We don't just build websites. We engineer high-end digital experiences that define authority and drive expansion.</p>
+        <a href="https://wa.me/5511988419446" class="btn">Start Your Project</a>
+    </section>
+
+    <section class="services" id="services">
+        <div class="card">
+            <h3>Premium Web Design</h3>
+            <p>Visual narratives tailored for luxury brands and tech startups. Performance meets aesthetics.</p>
+        </div>
+        <div class="card">
+            <h3>Custom Ecosystems</h3>
+            <p>From complex e-commerce to proprietary platforms. We build the engine that runs your business.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Authority</h3>
+            <p>SEO and conversion-focused structures designed to position your brand at the top of the market.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Marian Cotheley | Elite Digital Works. <br> "Time is the engine of expansion."</p>
+    </footer>
+
+</body>
+</html>
+
